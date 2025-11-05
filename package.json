@@ -12,5 +12,14 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.16",
     "tailwindcss": "^4.1.16"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Romain0707/Ohm-Sweet-Ohm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Romain0707/Ohm-Sweet-Ohm/issues"
+  },
+  "homepage": "https://github.com/Romain0707/Ohm-Sweet-Ohm#readme"
 }
