@@ -29,7 +29,7 @@
     --color-green: #6c8e69;
     --color-mint: #b1fba4;
     --color-brown: #2d2624;
-    --animate-scrolling: scrolling 10s linear infinite;
+    --animate-scrolling: scrolling 50s linear infinite;
   }
 }
 @layer base {
@@ -184,8 +184,11 @@
   .absolute {
     position: absolute;
   }
-  .m-\[0_auto\] {
-    margin: 0 auto;
+  .relative {
+    position: relative;
+  }
+  .top-30 {
+    top: calc(var(--spacing) * 30);
   }
   .mx-auto {
     margin-inline: auto;
@@ -214,32 +217,23 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
-  .h-full {
-    height: 100%;
-  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
-  .w-96 {
-    width: calc(var(--spacing) * 96);
+  .w-2 {
+    width: calc(var(--spacing) * 2);
   }
-  .w-\[1080px\] {
-    width: 1080px;
-  }
-  .w-\[2080px\] {
-    width: 2080px;
+  .w-2\/5 {
+    width: calc(2/5 * 100%);
   }
   .w-full {
     width: 100%;
   }
   .max-w-5xl {
     max-width: var(--container-5xl);
-  }
-  .max-w-\[700px\] {
-    max-width: 700px;
   }
   .max-w-full {
     max-width: 100%;
@@ -270,9 +264,6 @@
   }
   .overflow-hidden {
     overflow: hidden;
-  }
-  .overflow-x-auto {
-    overflow-x: auto;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -309,8 +300,8 @@
   .bg-\[url\(\.\.\/img\/bg-design\.png\)\] {
     background-image: url(../img/bg-design.png);
   }
-  .bg-\[url\(\.\.\/img\/frog-carrousel\.jpg\.png\)\] {
-    background-image: url(../img/frog-carrousel.jpg.png);
+  .bg-\[url\(\.\.\/img\/frog-carrousel\.jpg\)\] {
+    background-image: url(../img/frog-carrousel.jpg);
   }
   .bg-\[url\(\.\.\/img\/image_banner\.png\)\] {
     background-image: url(../img/image_banner.png);
@@ -327,17 +318,14 @@
   .bg-\[url\(\.\.\/img\/smile-cub-carrousel\.jpg\)\] {
     background-image: url(../img/smile-cub-carrousel.jpg);
   }
+  .bg-\[url\(\.\.\/img\/yoga-carrousel\.jpg\)\] {
+    background-image: url(../img/yoga-carrousel.jpg);
+  }
   .bg-cover {
     background-size: cover;
   }
   .bg-center {
     background-position: center;
-  }
-  .object-cover {
-    object-fit: cover;
-  }
-  .p-\[20px_0\] {
-    padding: 20px 0;
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
@@ -357,6 +345,9 @@
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
   }
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
   .pr-32 {
     padding-right: calc(var(--spacing) * 32);
   }
@@ -366,6 +357,9 @@
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
   }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
   }
@@ -374,6 +368,9 @@
   }
   .text-end {
     text-align: end;
+  }
+  .text-start {
+    text-align: start;
   }
   .font-bellota {
     font-family: var(--font-bellota);
@@ -468,7 +465,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-500%);
   }
 }
 @property --tw-rotate-x {
