@@ -10,3 +10,14 @@
   --color-mint: #b1fba4;
   --color-brown: #2d2624;
 }
+@theme {
+  --animate-scrolling: scrolling 10s linear infinite;
+}
+@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
