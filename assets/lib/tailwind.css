@@ -12,13 +12,13 @@
 
 @keyframes breathe {
     0% {
-      box-shadow: 0px 0px 0px 0px #6C8E69;
+      box-shadow: 0px 0px 0px 0px var(--color-green);
     }
     40%, 60% {
-      box-shadow: 0px 0px 50px 30px #6C8E69;
+      box-shadow: 0px 0px 50px 30px var(--color-green);
     }
     100% {
-      box-shadow: 0px 0px 0px 0px #6C8E69;
+      box-shadow: 0px 0px 0px 0px var(--color-green);
     }
 }
 
