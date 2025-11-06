@@ -45,3 +45,31 @@
         opacity: 0;
     }
 }
+
+@theme {
+  --color-white: #FBFFEF;
+  --color-green: #6c8e69;
+  --color-mint: #b1fba4;
+  --color-brown: #2d2624;
+}
+@theme {
+  --animate-scrolling: scrolling 50s linear infinite;
+  --animate-scrolling2: scrolling2 50s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-600%);
+    }
+  }
+  @keyframes scrolling2 {
+    0% {
+      transform: translateX(500%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
