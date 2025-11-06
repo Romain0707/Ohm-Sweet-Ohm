@@ -5,4 +5,43 @@
 @theme {
     --font-bellota: "Bellota", sans-serif;
     --font-bellota-text: "Bellota Text", sans-serif;
+    --animate-breathe: breathe 10s linear infinite;
+    --animate-opacity: opacity 10s linear infinite;
+    --animate-opacity2: opacity2 10s linear infinite;
+}
+
+@keyframes breathe {
+    0% {
+      box-shadow: 0px 0px 0px 0px #6C8E69;
+    }
+    40%, 60% {
+      box-shadow: 0px 0px 50px 30px #6C8E69;
+    }
+    100% {
+      box-shadow: 0px 0px 0px 0px #6C8E69;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+}
+
+@keyframes opacity2 {
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
