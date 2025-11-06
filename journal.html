@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohm Sweet Ohm - Journal de Gratitude</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-[#FBFFEF] bg-[url(../img/bg-transparent.png)] bg-cover bg-center">
+    <header class="bg-[#6C8E69]">
+        <div class="h-[100px] mx-auto max-w-[1080px] px-5 flex">
+            <div class="max-w-[100px] mr-auto">
+                <img src="assets/img/Green_Simple_Personal_Mind_Heal_Logo__1_-removebg-preview.png" alt=""
+                    class="object-cover object-center">
+            </div>
+            <input type="checkbox" id="sidebar-active" class="hidden peer/opened">
+            <label for="sidebar-active" class="p-5 flex items-center md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#FBFFEF"
+                    stroke="#FBFFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu-icon lucide-menu hover:stroke-[#2D2624] transition ease duration-300">
+                    <path d="M4 5h16" />
+                    <path d="M4 12h16" />
+                    <path d="M4 19h16" />
+                </svg>
+            </label>
+
+            <label for="sidebar-active"
+                class="peer-checked/opened:h-full peer-checked/opened:w-full peer-checked/opened:fixed peer-checked/opened:top-0 peer-checked/opened:left-0 z-10"></label>
+            <div
+                class="peer-checked/opened:right-0 transition-right ease duration-700 h-full w-[220px] bg-[#6C8E69] md:bg-[#6C8E69] flex top-0 -right-full md:top-auto md:right-auto flex-col items-start z-20 shadow-[-5px_0_5px_rgba(0,0,0,0.10)] md:shadow-none md:bg-none fixed md:relative md:flex-row md:items-center md:w-auto">
+                <label for="sidebar-active" class="md:hidden p-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#FBFFEF"
+                        stroke="#FBFFEF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-x-icon lucide-x hover:stroke-[#2D2624] transition ease duration-300">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </label>
+                <nav class="flex h-full w-full text-end">
+                    <ul class="flex flex-col md:flex-row md:justify-center w-full font-bellota">
+                        <li><a href="#"
+                                class="inline-block md:flex md:items-center md:h-full md:p-5 w-full h-auto p-[20px_20px] transition ease duration-300 hover:bg-[#B1FBA4] text-[#FBFFEF] hover:text-[#2D2624] min-w-fit">Accueil</a>
+                        </li>
+                        <li><a href="conseils.html"
+                                class="inline-block md:flex md:items-center md:h-full md:p-5 w-full h-auto p-[20px_20px] transition ease duration-300 hover:bg-[#B1FBA4] text-[#FBFFEF] hover:text-[#2D2624] min-w-fit">Conseils
+                                & Astuces</a></li>
+                        <li><a href=""
+                                class="inline-block md:flex md:items-center md:h-full md:p-5 w-full h-auto p-[20px_20px] transition ease duration-300 hover:bg-[#B1FBA4] text-[#FBFFEF] hover:text-[#2D2624] min-w-fit">Exercices
+                                de Relaxation</a></li>
+                        <li><a href=""
+                                class="inline-block md:flex md:items-center md:h-full md:p-5 w-full h-auto p-[20px_20px] transition ease duration-300 hover:bg-[#B1FBA4] text-[#FBFFEF] hover:text-[#2D2624] min-w-fit">Journal
+                                de Gratitude</a></li>
+                        <li><a href="contact.html"
+                                class="inline-block md:flex md:items-center md:h-full md:p-5 w-full h-auto p-[20px_20px] transition ease duration-300 hover:bg-[#B1FBA4] text-[#FBFFEF] hover:text-[#2D2624] min-w-fit">À
+                                propos & Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="gratitude">
+            <div class="max-w-[780px] mx-auto my-0 px-5">
+                <form action="" class="bg-[#6C8E69] py-[37px] px-4 md:px-16 flex flex-col rounded-2xl my-20">
+                    <label for="" class="text-[#FBFFEF] font-bellota text-center text-2xl font-semibold">Journal de Gratitude</label>
+                    <label for="" class="text-[#FBFFEF] font-bellota-text text-center mb-8">Notez ici vos affirmations positives ou moments de gratitude du jour.</label>
+                    <input type="text" placeholder="Nom" class="bg-[#FBFFEF] p-4 w-full placeholder:font-bellota-text rounded-2xl mb-4 shadow-xl">
+                    <textarea name="" id="" placeholder="Aujourd'hui, je suis reconnaissant(e) pour..." class="bg-[#FBFFEF] p-4 w-full placeholder:font-bellota-text rounded-2xl min-h-36 mb-5 shadow-xl"></textarea>
+                    <div class="flex justify-center">
+                        <input type="submit" value="Envoyer" class="bg-mint py-1.5 px-16 font-bellota text-2xl font-semibold rounded-2xl mb-4 shadow-xl">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="pensees" class="bg-green mb-8 relative">
+            <div class="pt-9 pb-4">
+                <p class="uppercase text-2xl font-bellota text-white text-center">Ce qu'en disent les membres</p>
+            </div>
+            <div class="flex justify-center mb-9">
+                <div class="h-[75px] w-px bg-white"></div>
+            </div>
+            <div class="w-full max-w-[680px] px-15 m-auto pb-9">
+                <p class="font-bellota-text text-white text-center mb-9">« J'utilise ce journal de gratitude chaque soir avant de me coucher, et cela a vraiment transformé ma façon de voir les choses. Le fait d'écrire quelques mots positifs m'aide à relativiser mes difficultés et à terminer la journée sur une note paisible. L'interface douce favorise une vraie détente mentale. »</p>
+                <p class="font-bellota text-white text-center uppercase text-2xl">Nathalie</p>
+            </div>
+            <div class="flex justify-center gap-1.5 pb-9">
+                <div class="h-3 w-3 rounded-full border-2 border-white"></div>
+                <div class="h-3 w-3 rounded-full bg-white"></div>
+                <div class="h-3 w-3 rounded-full border-2 border-white"></div>
+            </div>
+
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-left-icon lucide-move-left"><path d="M6 8L2 12L6 16"/><path d="M2 12H22"/></svg>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+            </button>
+        </section>
+
+        <section id="thinking" class="">
+            <div class="max-w-[780px] mx-auto my-0 px-5">
+                <form action="" class="bg-[#6C8E69] pt-[37px] pb-4 px-4 md:px-16 flex flex-col rounded-2xl my-20">
+                    <label for="" class="text-[#FBFFEF] font-bellota text-center text-2xl font-semibold">Enregistre tes pensées</label>
+                    <label for="" class="text-[#FBFFEF] font-bellota-text text-center mb-8">Notez ici vos pensées sur nous.</label>
+                    <div class="flex flex-col md:flex-row md:gap-4">
+                        <input type="text" placeholder="Nom" class="bg-[#FBFFEF] p-4 w-full placeholder:font-bellota-text rounded-2xl mb-4 shadow-xl">
+                        <input type="text" placeholder="Prénom" class="bg-[#FBFFEF] p-4 w-full placeholder:font-bellota-text rounded-2xl mb-4 shadow-xl">
+                    </div>
+                    <input type="email" placeholder="Email" class="bg-[#FBFFEF] p-4 w-full placeholder:font-bellota-text rounded-2xl mb-4 shadow-xl">
+                    <textarea name="" id="" placeholder="Votre message" class="bg-[#FBFFEF] p-4 w-full placeholder:font-bellota-text rounded-2xl min-h-36 mb-5 shadow-xl"></textarea>
+                    <div class="flex justify-center">
+                        <input type="submit" value="Envoyer" class="bg-mint py-1.5 px-16 font-bellota text-2xl font-semibold rounded-2xl shadow-xl uppercase">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="avis" class="bg-green mb-8 pb-8">
+            <div class="max-w-[1080px] mx-auto my-0 px-5">
+                <div class="pt-9 pb-4">
+                    <p class="uppercase text-2xl font-bellota text-white text-center">Vos pensées</p>
+                </div>
+                <div class="max-w-[830px] mx-auto my-0 px-5 py-5 bg-white rounded-xl overflow-y-auto snap-y max-h-[500px]">
+                    <div>
+                        <p class="font-bellota font-semibold">Marie TUFFERY :</p>
+                        <p class="font-bellota-text mb-4 pb-4 border-b border-brown">“Les exercices de respiration guidée m'aident énormément à gérer mon stress au quotidien, merci pour ces ressources.”</p>
+                    </div>
+                    <div>
+                        <p class="font-bellota font-semibold">Philippe GAUTUN :</p>
+                        <p class="font-bellota-text mb-4 pb-4 border-b border-brown">“L'interface est fluide et intuitive. On sent que beaucoup de soin a été apporté à l'expérience utilisateur.”</p>
+                    </div>
+                    <div>
+                        <p class="font-bellota font-semibold">Jacques FRANCOIS :</p>
+                        <p class="font-bellota-text mb-4 pb-4 border-b border-brown">“Les articles sont très clairs et accessibles, même pour quelqu'un qui débute dans les pratiques de relaxation.”</p>
+                    </div>
+                    <div>
+                        <p class="font-bellota font-semibold">Maud VINCENT :</p>
+                        <p class="font-bellota-text mb-4 pb-4">“J'aimerais qu'il y ait plus d'exercices interactifs, peut-être sous forme de mini-jeux de relaxation.”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#6C8E69] text-[#FBFFEF]">
+        <div class="max-w-[1080px] mx-auto my-0 px-5">
+            <div class="flex flex-col md:justify-normal pt-5 md:flex-row md:items-center">
+                <div class="max-w-[250px] mx-auto flex items-center">
+                    <img class="object-cover object-center"
+                        src="assets/img/Green_Simple_Personal_Mind_Heal_Logo__1_-removebg-preview.png" alt="">
+                </div>
+                <div
+                    class="md:w-1/3 md:h-full flex flex-col justify-start md:pl-12 pb-10 gap-10 items-stretch text-start">
+                    <h3 class="font-bellota text-4xl text-shadow-lg">Ressources</h3>
+                    <ul class="pl-5">
+                        <li class="font-bellota-text text-xl/10 text-shadow-lg"><a href="">Happycare</a></li>
+                        <li class="font-bellota-text text-xl/10 text-shadow-lg"><a href="">Mieux être</a></li>
+                        <li class="font-bellota-text text-xl/10 text-shadow-lg"><a href="">Retrouver son entrain</a>
+                        </li>
+                        <li class="font-bellota-text text-xl/10 text-shadow-lg"><a href="">Yoga simple</a></li>
+                    </ul>
+                </div>
+                <div class="md:w-1/3 flex flex-col pb-10 gap-10 items-stretch">
+                    <h3 class="font-bellota text-4xl text-shadow-lg">Informations Légales</h3>
+                    <ul class="pl-5">
+                        <li class="font-bellota-text text-xl/10 text-shadow-lg"><a href="">Conditions Générales
+                                d'utilisation</a></li>
+                        <li class="font-bellota-text text-xl/10 text-shadow-lg"><a href="">Mentions Légales</a></li>
+                        <li class="font-bellota-text text-xl/10 text-shadow-lg"><a href="">Politique de
+                                confidentialité</a>
+                        </li>
+                        <li class="font-bellota-text text-xl/10 text-shadow-lg"><a href="">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-10 md:flex-row border-t-2 border-[#FBFFEF] py-10 drop-shadow-lg">
+                <div class="flex justify-center md:justify-start w-1/2">
+                    <p class="font-bellota-text flex justify-center md:justify-start items-center text-shadow-lg">&copy;
+                        Ohm Sweet Ohm. Tous
+                        droits
+                        réservés.</p>
+                </div>
+                <div class="flex flex-row justify-center md:justify-end w-1/2 gap-5">
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-instagram-icon lucide-instagram text-shadow-lg">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" width="32px"
+                            height="32px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                            xml:space="preserve" class="text-shadow-lg" stroke="#FBFFEF">
+                            <path
+                                d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-facebook-icon lucide-facebook text-shadow-lg">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-youtube-icon lucide-youtube text-shadow-lg">
+                            <path
+                                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                            <path d="m10 15 5-3-5-3z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
