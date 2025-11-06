@@ -11,6 +11,8 @@
     --color-white: #FBFFEF;
     --spacing: 0.25rem;
     --container-5xl: 64rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -30,6 +32,7 @@
     --color-mint: #b1fba4;
     --color-brown: #2d2624;
     --animate-scrolling: scrolling 50s linear infinite;
+    --animate-scrolling2: scrolling2 50s linear infinite;
   }
 }
 @layer base {
@@ -217,12 +220,6 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
-  .w-1\/2 {
-    width: calc(1/2 * 100%);
-  }
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
@@ -250,6 +247,9 @@
   .animate-scrolling {
     animation: var(--animate-scrolling);
   }
+  .animate-scrolling2 {
+    animation: var(--animate-scrolling2);
+  }
   .resize {
     resize: both;
   }
@@ -274,6 +274,10 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
+  .rounded-t-xl {
+    border-top-left-radius: var(--radius-xl);
+    border-top-right-radius: var(--radius-xl);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -291,17 +295,17 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-white\/50 {
-    background-color: color-mix(in srgb, #FBFFEF 50%, transparent);
+  .bg-white\/55 {
+    background-color: color-mix(in srgb, #FBFFEF 55%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
+      background-color: color-mix(in oklab, var(--color-white) 55%, transparent);
     }
   }
   .bg-\[url\(\.\.\/img\/bg-design\.png\)\] {
     background-image: url(../img/bg-design.png);
   }
-  .bg-\[url\(\.\.\/img\/frog-carrousel\.jpg\)\] {
-    background-image: url(../img/frog-carrousel.jpg);
+  .bg-\[url\(\.\.\/img\/bg-transparent\.png\)\] {
+    background-image: url(../img/bg-transparent.png);
   }
   .bg-\[url\(\.\.\/img\/image_banner\.png\)\] {
     background-image: url(../img/image_banner.png);
@@ -342,8 +346,17 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .pt-2 {
     padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
@@ -357,9 +370,6 @@
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
   }
-  .pl-2 {
-    padding-left: calc(var(--spacing) * 2);
-  }
   .pl-5 {
     padding-left: calc(var(--spacing) * 5);
   }
@@ -368,9 +378,6 @@
   }
   .text-end {
     text-align: end;
-  }
-  .text-start {
-    text-align: start;
   }
   .font-bellota {
     font-family: var(--font-bellota);
@@ -385,6 +392,10 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -418,9 +429,6 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
-  }
-  .will-change-transform {
-    will-change: transform;
   }
   .hover\:bg-mint {
     &:hover {
@@ -459,13 +467,33 @@
       text-align: start;
     }
   }
+  .md\:text-3xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .md\:text-xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
 }
 @keyframes scrolling {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-500%);
+    transform: translateX(-600%);
+  }
+}
+@keyframes scrolling2 {
+  0% {
+    transform: translateX(500%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 @property --tw-rotate-x {
