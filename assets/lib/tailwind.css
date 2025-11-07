@@ -3,73 +3,123 @@
 @import "tailwindcss";
 
 @theme {
-    --font-bellota: "Bellota", sans-serif;
-    --font-bellota-text: "Bellota Text", sans-serif;
-    --animate-breathe: breathe 10s linear infinite;
-    --animate-opacity: opacity 10s linear infinite;
-    --animate-opacity2: opacity2 10s linear infinite;
-}
+  --font-bellota: "Bellota", sans-serif;
+  --font-bellota-text: "Bellota Text", sans-serif;
+  --animate-breathe: breathe 10s linear infinite;
+  --animate-opacity: opacity 10s linear infinite;
+  --animate-opacity2: opacity2 10s linear infinite;
+  --animate-scrolling: scrolling 50s linear infinite;
+  --animate-scrolling2: scrolling2 50s linear infinite;
 
-@keyframes breathe {
-    0% {
-      box-shadow: 0px 0px 0px 0px var(--color-green);
-    }
-    40%, 60% {
-      box-shadow: 0px 0px 50px 30px var(--color-green);
-    }
-    100% {
-      box-shadow: 0px 0px 0px 0px var(--color-green);
-    }
-}
-
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    51% {
-        opacity: 0;
-    }
-}
-
-@keyframes opacity2 {
-    50% {
-        opacity: 0;
-    }
-    51% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@theme {
   --color-white: #FBFFEF;
   --color-green: #6c8e69;
   --color-mint: #b1fba4;
   --color-brown: #2d2624;
 }
-@theme {
-  --animate-scrolling: scrolling 50s linear infinite;
-  --animate-scrolling2: scrolling2 50s linear infinite;
+
+@keyframes breathe {
+  0% {
+    box-shadow: 0px 0px 0px 0px var(--color-green);
+  }
+
+  40%,
+  60% {
+    box-shadow: 0px 0px 50px 30px var(--color-green);
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 0px var(--color-green);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  51% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacity2 {
+  50% {
+    opacity: 0;
+  }
+
+  51% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes scrolling {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-600%);
-    }
+  0% {
+    transform: translateX(0);
   }
-  @keyframes scrolling2 {
-    0% {
-      transform: translateX(500%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+
+  100% {
+    transform: translateX(-600%);
   }
+}
+
+@keyframes scrolling2 {
+  0% {
+    transform: translateX(500%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@layer {
+  .social-tooltip::before {
+    content: attr(data-social);
+    position: absolute;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    transform: translateY(-30px) rotate(25deg);
+    opacity: 0;
+    transition: 200ms cubic-bezier(.42, 0, .44, 1.68);
+    font-family: "Bellota Text", sans-serif;
+  }
+
+  .social-tooltip::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid var(--accent-color);
+    transform: translateY(0) rotate(25deg);
+    opacity: 0;
+    transition: 200ms cubic-bezier(.42, 0, .44, 1.68);
+  }
+
+  .social-tooltip:hover::before {
+    transform: translateY(-65px) rotate(0);
+    opacity: 1;
+  }
+
+  .social-tooltip:hover::after {
+    transform: translateY(-42px) rotate(0);
+    opacity: 1;
+  }
+
+  .social-tooltip:hover {
+    background-color: var(--accent-color) !important;
+  }
+}
